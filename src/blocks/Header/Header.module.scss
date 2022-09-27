@@ -1,0 +1,54 @@
+@import "../../mixin.scss";
+
+.wrapper{
+    @include wrapper;
+}
+.header{
+    background-color: rgba(41, 46, 54, 1);
+    &Top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px 0;
+        &LinkLeft{
+            @include mainLink;
+            @include mainTextStyle;
+            font-size: 22px;
+            line-height: 33px;
+        }
+        &LinkRight{
+            @include mainLink;
+            @include mainTextStyle;
+            background: #E1B168;
+            color: #292E36;
+            font-size: 22px;
+            line-height: 33px;
+        }
+    }
+    &Bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 26px 0;
+        &Right{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+        &Left{
+            display: flex;
+            flex-direction: row;
+            gap: 60px;
+            & a{
+                @include mainTextStyle;
+                transition: 0.5s;
+            }
+            & a:hover{
+                color: #E1B168;
+                transition: 0.5s;
+            }
+        }
+    }
+}   

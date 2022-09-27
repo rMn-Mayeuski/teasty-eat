@@ -1,10 +1,9 @@
-import styles from "./App.module.scss";
+import Header from "./blocks/Header/Header";
+import "./App.scss";
 
 function App() {
   return (
-    <p className={styles.text}>
-      Holla
-    </p>
+    <Header/>
   );
 }
 
