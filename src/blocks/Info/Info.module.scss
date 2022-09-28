@@ -1,0 +1,74 @@
+@import "../../mixin.scss";
+
+.wrapper{
+    @include wrapper;
+}
+.title{
+    @include title;
+    margin: 0 0 15px 0;
+}
+.subtitle{
+    @include mainTextStyle;
+    color: #555555;
+}
+.signature{
+    width: 200px;
+}
+.info{
+    background: #FFF8F5;
+    &Container{
+        display: flex;
+        flex-direction: column;
+        &Top{
+            margin: 100px 0px 60px 0px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        &Bottom{
+            &Banner {
+                margin-right: 45px;
+            }
+            margin: 84px 0px 125px 0px;
+            display: flex;
+            flex-direction: row;
+            &Left {
+                display: flex;
+                flex-direction: column;
+                &Years{
+                    display: flex;
+                    flex-direction: row;
+                    margin: 5px 0 15px 0;
+                }
+                &Name{
+                    @include mainTextStyle;
+                    color: #555555;
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}
+.cardContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    & img{
+        margin-right: 20px;
+    }
+    &Right{
+        &Title{
+            font-family: 'Cormorant Infant';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 39px;
+            letter-spacing: 0.2px;
+            color: #292E36;
+        }   
+        &Subtitle{
+            @include mainTextStyle;
+            color: #555555;
+        }
+    }
+}   

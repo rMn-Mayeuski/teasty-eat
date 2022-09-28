@@ -1,0 +1,41 @@
+@import "../../mixin.scss";
+
+.wrapper{
+    @include wrapper;
+}
+.banner{
+    background: #292E36;
+    &Title{
+        font-family: 'Cormorant Infant';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 100px;
+        line-height: 110px;
+        letter-spacing: 0.2px;
+        color: #FFFFFF;
+    }
+    &Subtitle{
+        @include mainTextStyle;
+        margin: 26px 0 35px 0;
+    }
+    &Link{
+        @include mainLink;
+        @include mainTextStyle;
+        font-size: 22px;
+        line-height: 33px;
+        color: #E1B168;
+    }
+    &Container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px 0 0 0;
+        &Left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+    }
+}
+

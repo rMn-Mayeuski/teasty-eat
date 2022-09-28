@@ -1,5 +1,5 @@
 @mixin wrapper{
-    max-width: 1360px;
+    max-width: 1390px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -17,4 +17,13 @@
     line-height: 30px;
     letter-spacing: 0.2px;
     color: #FFFFFF;
+}
+@mixin title {
+    font-family: 'Cormorant Infant';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 56px;
+    letter-spacing: 0.2px;
+    color: #292E36;
 }
