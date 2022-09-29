@@ -2,12 +2,13 @@ import React from 'react';
 import s from "./BlockLabel.module.scss"
 
 interface BlockLabel{
-    text: string;
+    text: string,
+    color?: string,
 }
 
-const BlockLabel: React.FC<BlockLabel> = ({text}) => {
+const BlockLabel: React.FC<BlockLabel> = ({text, color}) => {
     return (
-        <p className={s.blockLabel}>
+        <p className={s.blockLabel} style={{color}}>
             {text}
         </p>
     );

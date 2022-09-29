@@ -1,0 +1,32 @@
+@import "../../mixin.scss";
+
+.wrapper{
+    @include wrapper;
+}
+.title{
+    @include title;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin-bottom: 8px
+}
+.subtitle{
+    @include mainTextStyle;
+    color: #FFFFFF;
+}
+.testimonials{
+    background: #292E36;
+    padding-top: 1px;
+    &Banner{
+        width: 100%;
+        object-fit: cover;
+    }
+    &Conteiner{
+        
+    }
+    &Slider{
+        padding: 60px 0 120px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

@@ -1,0 +1,22 @@
+@import "../../mixin.scss";
+
+.wrapper{
+    @include wrapper;
+}
+.title{
+    @include title;
+}
+.subtitle{
+    @include mainTextStyle;
+    color: #555555;
+    max-width: 813px;
+    text-align: center;
+    margin-top: 8px;
+}
+.offersContainer{
+    &Text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
