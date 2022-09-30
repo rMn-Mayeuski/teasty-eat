@@ -1,0 +1,68 @@
+@import "../../mixin.scss";
+
+.wrapper{
+    @include wrapper;
+}
+.reservation{
+    &Container{
+        padding: 1px 0;
+    }
+    background: url(../../img/Reservation/IMAGE.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    &Form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
+        margin: 140px auto;
+        padding: 0 140px 155px;
+        gap: 30px;
+        background: rgba(41, 46, 54, 0.95);
+        
+        &Title{
+            @include title;
+            color: #FFFFFF;
+        }
+        &Top{
+            display: flex;
+            flex-direction: row;
+            gap: 26px;
+            & input{
+                outline: none;
+                background-color: inherit;
+                border: 1px solid #858585;
+                @include mainTextStyle;
+                padding: 18px 0 18px 24px;
+                width: 307px;
+                &::placeholder{
+                    color: #FFFFFF;
+                }
+            }
+        }
+        &Bottom{
+            display: flex;
+            flex-direction: row;
+            gap: 24px;
+            & input{
+                outline: none;
+                background-color: inherit;
+                border: 1px solid #858585;
+                @include mainTextStyle;
+                padding: 18px 0 18px 24px;
+                width: 198px;
+                &::placeholder{
+                    color: #FFFFFF;
+                }
+            };
+        }
+        &Btn{
+            @include mainLink;
+            @include mainTextStyle;
+            color: #000000;
+            cursor: pointer;
+            outline: none;
+            border: none;
+        }
+    }
+}

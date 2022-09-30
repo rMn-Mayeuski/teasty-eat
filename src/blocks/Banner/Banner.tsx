@@ -14,7 +14,7 @@ const Banner: React.FC = () => {
                         <p className={s.bannerSubtitle}>
                             The people, food and the prime locations make the perfect place good friends & family to come together and have great time.
                         </p>
-                        <a className={s.bannerLink} href="#">View Menu</a>
+                        <a className={s.bannerLink} href="#menu">View Menu</a>
                     </div>
                     <div className={s.bannerContainerRight}>
                         <img src={banner} alt="restaraunt banner" />

@@ -1,0 +1,43 @@
+@import "../../mixin.scss";
+
+.wrapper{
+    @include wrapper;
+}
+.title{
+    @include title;
+    color: #FFFFFF;
+}
+.subtitle{
+    @include mainTextStyle;
+}
+.weOffer{
+    background: #292E36;
+    &Container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding-bottom: 140px;
+        &Right{
+            max-width: 438px;
+        }
+        &Left{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+    }
+}
+.cardContent{
+    text-align: center;
+    padding: 40px;
+    border: 20px solid #323841;
+    &Title{
+        @include title;
+        font-size: 25px;
+        line-height: 35px;
+        color: #FFFFFF;
+    }
+}   

@@ -1,0 +1,41 @@
+@import "../../mixin.scss";
+
+.wrapper{
+    @include wrapper;
+}
+.title{
+    @include title;
+}
+.subtitle{
+    @include mainTextStyle;
+    color: #555555;
+    max-width: 760px;
+    text-align: center;
+    margin-top: 8px;
+}
+.secondMenuLink{
+    @include mainLink;
+    @include mainTextStyle;
+    font-size: 22px;
+    line-height: 33px;
+    color: #E1B168;
+}
+.secondMenuContainer{
+    padding-bottom: 75px;
+    border-bottom: 1px solid #000000;
+    margin-bottom: 64px;
+    &:last-child{
+        text-align: center;
+    }
+        &Text{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        &Cards{
+            margin: 50px 0 70px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+}
+

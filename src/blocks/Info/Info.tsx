@@ -9,7 +9,7 @@ import Card from './Card/Card';
 
 const Info: React.FC = () => {
     return (
-        <section className={s.info}>
+        <section className={s.info} id="info" >
             <div className={s.wrapper}>
                 <div className={s.infoContainer}>
                     <div className={s.infoContainerTop}>

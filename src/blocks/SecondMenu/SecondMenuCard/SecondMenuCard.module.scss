@@ -1,0 +1,24 @@
+@import "../../../mixin.scss";
+
+.card{
+    max-width: 318px;
+    &Text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-bottom: 2px solid #DCDCDC;
+        padding-bottom: 11px;
+        margin: 9px 0 11px 0;
+    }
+    &Title,
+    &Price{
+        @include title;
+        font-size: 30px;
+        line-height: 42px;
+    }
+    &Description{
+        @include mainTextStyle;
+        color: #555555;
+        text-align: left;
+    }
+}

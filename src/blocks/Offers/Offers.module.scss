@@ -19,4 +19,46 @@
         flex-direction: column;
         align-items: center;
     }
+    &Cards{
+        margin: 20px 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
+.offerCardLeft{
+    background-image: url(../../img/Offers/Background1.png);
+}
+.offerCardRight{
+    background-image: url(../../img/Offers/Background2.png);
+}
+.offerCardLeft,
+.offerCardRight{
+    max-width: 665px;
+    padding: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.offerCardContent{
+        & img{
+            margin-bottom: 36px
+        }
+        &Price{
+            @include mainTextStyle;
+            color: #292E36;
+            border-top: 2px solid #292E36;
+            border-bottom: 2px solid #292E36;
+            width: fit-content
+        }
+        &Title{
+            @include title;
+            margin: 8px 0 5px 0;
+        }
+        &Description{
+            @include mainTextStyle;
+            color: #555555;
+            max-width: 245px;
+        }
+    }

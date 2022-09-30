@@ -11,18 +11,17 @@ const Header: React.FC = () => {
         <header className={s.header}>
             <div className={s.wrapper}>
                 <div className={s.headerTop}>
-                    <a className={s.headerTopLinkLeft} href="#">Call - 123 456 789</a>
+                    <a className={s.headerTopLinkLeft} href="tel:+123 456 789">Call - 123 456 789</a>
                     <a href="#"><img src={HL} alt="logo" /></a>
-                    <a className={s.headerTopLinkRight} href="#">Reservation</a>
+                    <a className={s.headerTopLinkRight} href="#reserv">Reservation</a>
                 </div>
                 <div className={s.headerBottom}>
                     <div className={s.headerBottomLeft}>
-                        <a href="#">Home</a>
-                        <a href="#">About Us</a>
-                        <a href="#">Our Menu</a>
-                        <a href="#">Pages</a>
-                        <a href="#">Blog</a>
-                        <a href="#">Contact Us</a>
+                        {/* <a href="#">Home</a> */}
+                        <a href="#info">About Us</a>
+                        <a href="#menu">Our Menu</a>
+                        <a href="#blog">Blog</a>
+                        <a href="#footer">Contact Us</a>
                     </div>
                     <div className={s.headerBottomRight}>
                         <a href="#"><img src={inst} alt="logo instagramm" /></a>

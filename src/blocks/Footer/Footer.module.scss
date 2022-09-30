@@ -1,0 +1,58 @@
+@import "../../mixin.scss";
+
+.wrapper{
+    @include wrapper;
+}
+.footer{
+    background-color: #292E36;
+    &Top{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        & p{
+            @include mainTextStyle;
+            font-size: 22px;
+            line-height: 33px;
+        }
+        &Logo{
+            position: relative;
+            top: 120px;
+        }
+        &Social{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+    }
+    &Bottom{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 24px;
+        &Contacts{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            &Adress{
+                @include mainTextStyle;
+            }
+            & a{
+                @include mainTextStyle;
+                color: #E1B168;
+            }
+        }
+        &HoursWork{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            & p{
+                @include mainTextStyle;
+                & span{
+                    color: #E1B168;
+                }
+            }
+        }
+    }
+}

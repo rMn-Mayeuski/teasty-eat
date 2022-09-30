@@ -12,7 +12,7 @@ import BlockLabel from '../../components/BlockLabel/BlockLabel';
 
 const Menu: React.FC = () => {
     return (
-        <section>
+        <section id='menu'>
             <div className={s.wrapper}>
                 <BlockLabel text='Menu'/>
                 <div className={s.menuContainer}>
