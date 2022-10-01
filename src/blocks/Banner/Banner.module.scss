@@ -13,6 +13,10 @@
         line-height: 110px;
         letter-spacing: 0.2px;
         color: #FFFFFF;
+        @media (max-width: 907px) {
+            font-size: 50px;
+            line-height: 50px; 
+        }
     }
     &Subtitle{
         @include mainTextStyle;
@@ -30,11 +34,29 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 10px 0 0 0;
+        @media (max-width: 907px) {
+            flex-direction: column;
+            align-items: center;
+        }
         &Left{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
+            @media (max-width: 907px) {
+                align-items: center;
+                max-width: 507px;
+                text-align: center;
+            }
+        }
+        &Right img{
+            @media (max-width: 1257px) {
+                margin-top: 20px;
+                width: 400px;
+            }
+            @media (max-width: 437px) {
+                width: 300px;
+            }
         }
     }
 }

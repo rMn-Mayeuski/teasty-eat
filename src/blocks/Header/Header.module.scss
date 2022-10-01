@@ -3,14 +3,36 @@
 .wrapper{
     @include wrapper;
 }
+.headerSticky{
+    background: rgba(41, 46, 54, 1);
+    border-bottom: 1px solid gray;
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
 .header{
     background-color: rgba(41, 46, 54, 1);
     &Top{
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
         padding: 50px 0;
+        @media (max-width: 627px) {
+            justify-content: space-around;
+        }
+        &Logo {
+            @media (max-width: 599px) {
+                order: 3;
+                margin-top: 15px;;
+            }
+            & img{
+                @media (max-width: 777px) {
+                    height: 120px;
+                }
+            }
+        }
         &LinkLeft{
             @include mainLink;
             @include mainTextStyle;
@@ -28,19 +50,39 @@
     }
     &Bottom{
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         justify-content: space-between;
+        gap: 10px;
         padding: 26px 0;
+        @media (max-width:740px) {
+            flex-direction: column;
+            align-items: center;
+        }
+        @media (max-width:627px) {
+            padding: 10px 0;
+        }
         &Right{
             display: flex;
             flex-direction: row;
             align-items: center;
             gap: 20px;
+            @media (max-width:627px) {
+                display: none;
+            }
         }
         &Left{
             display: flex;
             flex-direction: row;
             gap: 60px;
+            @media (max-width:580px) {
+                gap: 35px;
+            }
+            @media (max-width:467px) {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 15px;
+            }
             & a{
                 @include mainTextStyle;
                 transition: 0.5s;

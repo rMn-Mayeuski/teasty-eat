@@ -4,26 +4,33 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    @media (max-width: 577px) {
+        flex-direction: column;
+        text-align: center;
+    }
     &Text{
         min-width: 420px;
+        @media (max-width: 617px) {
+            min-width: 10px;
+            margin-right: 15px;
+        }
     }
     & span{
         border-bottom: 2px solid #AAAAAA;
         position: relative;
         bottom: -25px;
         width: 100%;
+        @media (max-width: 867px) {
+            display: none;
+        }
     }
     & img{
         margin-right: 20px;
     }
     &Title{
-        font-family: 'Cormorant Infant';
-        font-style: normal;
-        font-weight: 400;
+        @include title;
         font-size: 30px;
         line-height: 42px;
-        letter-spacing: 0.2px;
-        color: #292E36;
     }
     &Subtitle{
         @include mainTextStyle;

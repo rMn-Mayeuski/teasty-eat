@@ -8,6 +8,14 @@
     height: 73px;
     color: #E1B168;
     border: 2px solid #E1B168;
+    @media (max-width: 977px) {
+        padding: 12px 25px;
+        height: 55px;
+    }
+    @media (max-width: 377px) {
+        padding: 3px 10px;
+        height: 35px;
+    }
 }
 @mixin mainTextStyle {
     font-family: 'Josefin Sans';
@@ -17,6 +25,9 @@
     line-height: 30px;
     letter-spacing: 0.2px;
     color: #FFFFFF;
+    @media (max-width: 977px) {
+        font-size: 15px;
+    }
 }
 @mixin title {
     font-family: 'Cormorant Infant';
@@ -26,4 +37,8 @@
     line-height: 56px;
     letter-spacing: 0.2px;
     color: #292E36;
+    @media (max-width: 977px) {
+        font-size: 25px;
+        line-height: 30px;
+    }
 }

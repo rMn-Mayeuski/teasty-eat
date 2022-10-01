@@ -10,21 +10,23 @@ import WeOffer from "./blocks/WeOffer/WeOffer";
 import Blog from "./blocks/Blog/Blog";
 import Reservation from "./blocks/Reservarion/Reservation";
 import Footer from "./blocks/Footer/Footer";
+import HeaderSticky from "./blocks/Header/HeaderSticky/HeaderSticky";
 
 function App() {
   return (
     <>
       <Header/>
+      <HeaderSticky/>
       <Banner/>
       <Info/>
       <Menu/>
-      <Testimonials/>
+      {/* <Testimonials/>
       <Offers/>
       <SecondMenu/>
       <WeOffer/>
       <Blog/>
       <Reservation/>
-      <Footer/>
+      <Footer/> */}
     </>
   );
 }
