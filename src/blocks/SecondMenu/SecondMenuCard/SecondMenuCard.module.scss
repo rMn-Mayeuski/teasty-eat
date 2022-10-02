@@ -2,6 +2,11 @@
 
 .card{
     max-width: 318px;
+    & img{
+        @media (max-width: 377px) {
+            width: 280px;
+        }
+    }
     &Text{
         display: flex;
         flex-direction: row;

@@ -19,11 +19,18 @@
     font-size: 22px;
     line-height: 33px;
     color: #E1B168;
+    @media (max-width: 377px) {
+        padding: 10px 10px;
+    }
 }
 .secondMenuContainer{
     padding-bottom: 75px;
     border-bottom: 1px solid #000000;
     margin-bottom: 64px;
+    @media (max-width: 697px) {
+        padding-bottom: 25px;
+        margin-bottom: 25px;
+    }
     &:last-child{
         text-align: center;
     }
@@ -36,6 +43,14 @@
             margin: 50px 0 70px 0;
             display: flex;
             justify-content: space-between;
+            @media (max-width: 1347px) {
+                flex-wrap: wrap;
+                justify-content: space-around;
+                gap: 25px;
+            }
+            @media (max-width: 697px) {
+                margin: 20px 0 30px 0;
+            }
         }
 }
 

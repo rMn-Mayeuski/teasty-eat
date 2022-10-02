@@ -20,13 +20,13 @@ function App() {
       <Banner/>
       <Info/>
       <Menu/>
-      {/* <Testimonials/>
+      <Testimonials/>
       <Offers/>
       <SecondMenu/>
       <WeOffer/>
       <Blog/>
       <Reservation/>
-      <Footer/> */}
+      <Footer/>
     </>
   );
 }

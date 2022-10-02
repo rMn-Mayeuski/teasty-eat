@@ -19,7 +19,13 @@
         padding: 0 140px 155px;
         gap: 30px;
         background: rgba(41, 46, 54, 0.95);
-        
+        @media (max-width: 957px) {
+            padding: 0 40px 55px;
+        }
+        @media (max-width: 755px) {
+            padding: 0 10px 15px;
+            margin: 30px auto;
+        }
         &Title{
             @include title;
             color: #FFFFFF;
@@ -28,6 +34,9 @@
             display: flex;
             flex-direction: row;
             gap: 26px;
+            @media (max-width: 697px) {
+                flex-direction: column;
+            }
             & input{
                 outline: none;
                 background-color: inherit;
@@ -35,6 +44,9 @@
                 @include mainTextStyle;
                 padding: 18px 0 18px 24px;
                 width: 307px;
+                @media (max-width: 697px) {
+                    width: 198px;
+                }
                 &::placeholder{
                     color: #FFFFFF;
                 }
@@ -44,6 +56,9 @@
             display: flex;
             flex-direction: row;
             gap: 24px;
+            @media (max-width: 697px) {
+                flex-direction: column;
+            }
             & input{
                 outline: none;
                 background-color: inherit;
@@ -63,6 +78,9 @@
             cursor: pointer;
             outline: none;
             border: none;
+            @media (max-width: 377px) {
+                padding: 6px 10px;
+            }
         }
     }
 }

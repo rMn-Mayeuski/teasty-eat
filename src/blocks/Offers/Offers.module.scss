@@ -24,6 +24,11 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        @media (max-width: 1367px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+        }
     }
 }
 .offerCardLeft{
@@ -40,11 +45,19 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    & img{
+        @media (max-width: 477px) {
+            margin-top: 10px;
+            width: 200px;
+        }
+    }
+    @media (max-width: 667px) {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
 }
 .offerCardContent{
-        & img{
-            margin-bottom: 36px
-        }
         &Price{
             @include mainTextStyle;
             color: #292E36;

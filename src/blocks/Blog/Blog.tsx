@@ -1,8 +1,10 @@
 import React from 'react';
 import BlockLabel from '../../components/BlockLabel/BlockLabel';
 import s from "./Blog.module.scss";
+import back1 from "../../img/Blog/IMAGE-1.png";
+import back2 from "../../img/Blog/IMAGE-2.png";
 
-const Blog = () => {
+const Blog: React.FC = () => {
     return (
         <section id='blog'>
             <div className={s.wrapper}>
@@ -21,6 +23,11 @@ const Blog = () => {
                         
                         <div className={s.blogContainerCard}>
                             <div className={s.blogContainerCardTop}>
+                                <img 
+                                className={s.blogContainerCardTopBackground}
+                                src={back1} 
+                                alt="background img"
+                                />
                                 <a href="#">View More</a>
                             </div>
                             <div className={s.blogContainerCardBottom}>
@@ -43,6 +50,11 @@ const Blog = () => {
 
                         <div className={s.blogContainerCard}>
                             <div className={s.blogContainerCardTopSecond}>
+                            <img 
+                                className={s.blogContainerCardTopSecondBackground}
+                                src={back2} 
+                                alt="background img"
+                                />
                                 <a href="#">View More</a>
                             </div>
                             <div className={s.blogContainerCardBottom}>

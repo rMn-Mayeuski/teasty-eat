@@ -4,6 +4,9 @@
     max-width: 544px;
     background: #343942;
     padding: 0 40px;
+    @media (max-width: 457px) {
+        padding: 0 5px;
+    }
     &Top{
         position: relative;
         padding-bottom: 30px;

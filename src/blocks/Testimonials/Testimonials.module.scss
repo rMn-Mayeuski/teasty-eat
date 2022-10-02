@@ -21,12 +21,23 @@
         object-fit: cover;
     }
     &Conteiner{
-        
+        @media (max-width: 1127px) {
+            text-align: center;
+        }
     }
     &Slider{
         padding: 60px 0 120px 0;
         display: flex;
         flex-direction: row;
+        flex-wrap: wrap;
         justify-content: space-around;
+        @media (max-width: 1127px) {
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        @media (max-width: 457px) {
+            text-align: center;
+        }
     }
 }

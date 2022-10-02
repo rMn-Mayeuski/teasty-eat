@@ -10,6 +10,9 @@
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        @media (max-width: 687px) {
+            padding-top: 30px;
+        }
         & p{
             @include mainTextStyle;
             font-size: 22px;
@@ -18,6 +21,9 @@
         &Logo{
             position: relative;
             top: 120px;
+            @media (max-width: 687px) {
+                display: none;
+            }
         }
         &Social{
             display: flex;
@@ -31,10 +37,17 @@
         flex-direction: row;
         justify-content: space-between;
         padding-bottom: 24px;
+        @media (max-width: 447px) {
+            flex-direction: column;
+            margin-top: -150px;
+        }
         &Contacts{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
+            @media (max-width: 447px) {
+                margin-top: 40px;
+            }
             &Adress{
                 @include mainTextStyle;
             }
@@ -47,6 +60,9 @@
             display: flex;
             flex-direction: column;
             align-items: flex-end;
+            @media (max-width: 447px) {
+                margin-top: -150px;
+            }
             & p{
                 @include mainTextStyle;
                 & span{
